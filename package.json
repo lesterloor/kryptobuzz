@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lesterloor/kryptobuzz/issues"
   },
-  "homepage": "https://github.com/lesterloor/kryptobuzz#readme"
+  "homepage": "https://github.com/lesterloor/kryptobuzz#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
