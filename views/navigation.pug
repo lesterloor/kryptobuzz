@@ -12,6 +12,26 @@ navigation.navigation
       a.menu-item(href='/videos') Videos
     li
       a.menu-item(href='/settings') Settings
+.ticker
+  ul.currenciesData
+    li
+      a(href='#') BTC:
+       |  $#{btcprice} 
+       span(class="coinPercent") (#{btcPercent})
+    li
+      a(href='#') ETH:
+       |  $#{ethprice} 
+       span(class="coinPercent") (#{ethPercent})
+    li
+      a(href='#') LTC:
+       |  $#{ltcprice} 
+       span(class="coinPercent") (#{ltcPercent})
+    li
+      a(href='#') XRP:
+       |  $#{xrpprice} 
+       span(class="coinPercent") (#{xrpPercent})
+
+
 script(src='https://code.jquery.com/jquery-2.2.4.min.js')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js')
 script(src='/public/assets/main.js')

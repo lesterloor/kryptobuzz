@@ -1,4 +1,12 @@
 $( document ).ready(function() {
+  // if ticker coin price is negative color redirect
+  var currentPercent = $(".coinPercent").text();
+  console.log(currentPercent);
+	$(".coinPercent:contains('-')").css("color", "red");
+
+
+//
+
 
   // Toggle button for editing editForm
   $( ".rightSpan, .editBTN" ).click(function(e) {
