@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
   // Toggle button for editing editForm
-  $( ".rightSpan .editBTN" ).click(function(e) {
+  $( ".rightSpan, .editBTN" ).click(function(e) {
     e.preventDefault();
     $( ".editInput" ).toggle();
     $( ".rightSpan" ).toggle();
