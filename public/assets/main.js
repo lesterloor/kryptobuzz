@@ -1,5 +1,21 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+
+  // Toggle button for editing editForm
+  $( ".rightSpan" ).click(function(e) {
+    e.preventDefault();
+    $( ".editInput" ).toggle();
+    $( ".rightSpan" ).toggle();
+    $( ".profileSubmitBtn" ).toggle();
+  });
+  // $( ".editBTN" ).click(function(e) {
+  //   e.preventDefault();
+  //   $('.editInput').css('display','')
+  //   $('.rightSpan').css('display','none')
+  //   console.log( "Handler for .click() called." );
+  // });
+
+  //
+  console.log( "ready!" );
 $.stellar({
   horizontalScrolling: false
 });

@@ -6,4 +6,8 @@ module.exports = function(app, passport) {
     app.get('/', function(req, res) {
           res.render('index.pug');
     });
+    // HOMEPAGE  =========================
+    app.get('/settings', function(req, res) {
+          res.render('settings.pug');
+    });
 }

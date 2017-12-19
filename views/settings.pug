@@ -1,0 +1,30 @@
+include navigation.pug
+.bodyContainer
+  .mainPanel
+    .settingContainer
+        center
+          .imgprofile
+            img(src="https://www.sonypark360.net/wp-content/uploads/2017/08/profile-pictures.png" width="100px")
+            br
+            //- button(class="editBTN") Edit
+        form(class="editForm" methond="post" action="#")
+          ul
+            li
+              span(class="leftSpan") Full Name
+              span Lester Loor
+            li
+              span(class="leftSpan") Email 
+              span(class="rightSpan") Lester@theblumarket.com
+              input(class="editInput" value="Lester@theblumarket.com" placeholder="Enter Username")
+            li
+              span(class="leftSpan") Nanopool Miner
+              span(class="rightSpan") asdkashdgdyhasdfge
+              input(class="editInput" value="asdkashdgdyhasdfge" placeholder="Enter Username")
+          
+          input(class="profileSubmitBtn" type='submit' value="Submit")
+  
+    
+  .sideRightPanel
+    h3 This is Side
+
+  
