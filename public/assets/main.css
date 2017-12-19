@@ -38,21 +38,23 @@ body{
   margin:10px;
   width:100%;
   height:150px;
-  background-color: green;
+  background-color: white;
 }
 .articleImage{
-  width:30%;
+  width:35%;
   float: left;
-  background-color: yellow;
 }
 .articleContent{
-  margin-left:10px;
-  width: 67%;
+  width: 60%;
   float: left;
-  background-color: yellow;
+  background-color: white;
 }
-.articleContent h3{
-  margin: 10px 0;
+.articleContent h3 {
+  margin: 10px 0 0 10px;
+  height:110px;
+}
+.articleContent span {
+  margin-left: 10px;
   height:110px;
 }
 
@@ -84,12 +86,11 @@ body{
     margin:2px;
     width:100%;
     height:130px;
-    background-color: green;
+    background-color: white;
   }
   .articleImage{
-    width:150px;
+    width:180px;
     float: left;
-    background-color: yellow;
   }
   .articleContent {
     width: 50%;
