@@ -1,12 +1,17 @@
 include head.pug
-ul.navigation
-  li
-    a(href='/') Logo
-  li
-    a(href='/') Feed
-  li
-    a(href='/news') News
-  li
-    a(href='/videos') Videos
-  li
-    a(href='/profile') Profile
+navigation.navigation
+  h1
+    | Retweet 
+    i Crypto
+  ul.menu
+    li
+      a.menu-item.selected(href='#') Feed
+    li
+      a.menu-item(href='/news') News
+    li
+      a.menu-item(href='/videos') Videos
+    li
+      a.menu-item(href='/settings') Settings
+script(src='https://code.jquery.com/jquery-2.2.4.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js')
+script(src='/public/assets/main.js')

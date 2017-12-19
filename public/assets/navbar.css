@@ -1,48 +1,102 @@
-
-.navigation {
-  list-style: none;
-  margin: 0;
-  background: deepskyblue;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-start;
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans|Lato";
+/* ---------- *\
+     Basics
+\* ---------- */
+body,
+div,
+section,
+navigation,
+header,
+footer,
+article {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.navigation a {
-  text-decoration: none;
+a {
+  color: inherit;
+}
+
+.bg {
   display: block;
-  padding: 1em;
+  position: fixed;
+  width: 100vw;
+  min-heigth: 100vh;
+  -webkit-filter: blur(20px);
+}
+
+
+
+
+/* ---------- *\
+   Navigation
+\* ---------- */
+.navigation {
+  /*position: absolute;*/
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  background-color: #EA5455;
   color: white;
 }
-
-.navigation a:hover {
-  background: #00b7f5;
+.navigation h1 {
+  display: inline;
+  margin: 0 50px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+.navigation i {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 0.3em;
+}
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 30px;
+  list-style: none;
+  line-height: 60px;
+  font-family: 'Josefin Sans';
+}
+.navigation a {
+  text-decoration: none;
 }
 
-/*@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
+.menu-item {
+  display: inline-block;
+  /*height: 100%;*/
+  padding: 0 20px;
 }
-@media all and (max-width: 600px) {
+
+.menu-item.selected {
+  background-color: #ee7475;
+}
+
+/* ---------- *\
+   Responsive
+\* ---------- */
+@Media screen and (max-width: 600px) {
   .navigation {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }*/
-
-  .navigation a {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 120px;
   }
 
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
 }

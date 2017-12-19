@@ -1,0 +1,105 @@
+body{
+  margin: 0;
+  padding:0;
+  background-color: #f2f2f2;
+}
+.bodyContainer{
+  width: 95%;
+  background-color: white;
+  margin: 8px auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+}
+.mainPanel{
+  background-color: red;
+  flex-grow:2;
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.sideRightPanel{
+  background-color: blue;
+  flex-grow:1;
+  height:400px;
+
+}
+
+.articleContainer{
+  margin:10px;
+  width:100%;
+  height:150px;
+  background-color: green;
+}
+.articleImage{
+  width:30%;
+  float: left;
+  background-color: yellow;
+}
+.articleContent{
+  margin-left:10px;
+  width: 67%;
+  float: left;
+  background-color: yellow;
+}
+.articleContent h3{
+  margin: 10px 0;
+  height:110px;
+}
+
+
+/* ---------- *\
+   Responsive
+\* ---------- */
+@Media screen and (max-width: 600px) {
+  .bodyContainer{
+    width: 100%;
+    background-color: white;
+    margin: 8px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+  }
+  .mainPanel{
+    background-color: red;
+    width:100%;
+  }
+  .sideRightPanel{
+    background-color: blue;
+    width:100%;
+  }
+  .articleContainer{
+    margin:2px;
+    width:100%;
+    height:130px;
+    background-color: green;
+  }
+  .articleImage{
+    width:150px;
+    float: left;
+    background-color: yellow;
+  }
+  .articleContent {
+    width: 50%;
+
+  }
+  .articleContent h3{
+    font-size: 20px;
+  }
+  .aboutArtlicle{
+    display: none;
+  }
+
+}
